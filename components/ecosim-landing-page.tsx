@@ -231,14 +231,13 @@ export function EcosimLandingPage() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="aspect-video bg-gray-200 flex items-center justify-center rounded-lg overflow-hidden">
-                <Image
-                  src="/placeholder.svg?height=400&width=800"
-                  alt="Interactive Map"
-                  width={800}
-                  height={400}
-                  className="object-cover w-full h-full"
-                />
+            <div className="w-full h-[1000px] overflow-hidden relative rounded-lg">
+                <iframe
+                  src="https://map-iota-ebon.vercel.app/"
+                  allowFullScreen
+                  allow="autoplay; fullscreen; xr-spatial-tracking"
+                  className="absolute top-[100px] left-0 w-full h-[650px]"
+                ></iframe>
               </div>
             </CardContent>
           </Card>
